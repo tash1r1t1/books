@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адмінка - Електронна бібліотека</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Адмінка</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Додати нову книгу</h2>
+            <form id="book-form" method="POST">
+                <label for="title">Назва книги:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="author">Автор:</label>
+                <input type="text" id="author" name="author" required>
+                
+                <label for="year">Рік видання:</label>
+                <input type="number" id="year" name="year" required>
+
+                <label for="description">Опис:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <button type="submit">Додати книгу</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Список книг</h2>
+            <ul id="book-list">
+                <!-- Список книг будет отображаться здесь -->
+            </ul>
+        </section>
+
+        <section>
+            <a href="/"><button>На головну</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Електронна бібліотека. Всі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
